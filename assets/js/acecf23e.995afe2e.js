@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblueskysdkdocs=self.webpackChunkblueskysdkdocs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/blueskysdkdocs/blog","blogTitle":"Blog","authorsListPath":"/blueskysdkdocs/blog/authors"}')}}]);

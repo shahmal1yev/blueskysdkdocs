@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblueskysdkdocs=self.webpackChunkblueskysdkdocs||[]).push([[9004],{7968:s=>{s.exports=JSON.parse('{"metadata":{"permalink":"/blueskysdkdocs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
