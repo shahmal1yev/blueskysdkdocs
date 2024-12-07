@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blueskysdk.shahmal1yev.dev/blog/</id>
-    <title>BlueSky PHP SDK Documentation Blog</title>
+    <title>BlueSky PHP SDK Blog</title>
     <updated>2024-12-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blueskysdk.shahmal1yev.dev/blog/"/>
-    <subtitle>BlueSky PHP SDK Documentation Blog</subtitle>
+    <subtitle>BlueSky PHP SDK Blog</subtitle>
     <icon>https://blueskysdk.shahmal1yev.dev/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[How to Create and Share Posts on Bluesky Using BlueSky SDK]]></title>
