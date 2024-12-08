@@ -16,37 +16,38 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-            <Link
-                className="button button--secondary button--lg"
-                to="/docs/intro"
-                target="_blank"
-            >
-                Getting Started
-            </Link>
-            <Link
-                className="button button--lg"
-                href="https://github.com/sponsors/shahmal1yev"
-                target="_blank"
-            >
-                <FontAwesomeIcon icon={faGithub} style={{ marginRight: '8px' }} />
-                Sponsor on GitHub
-            </Link>
-            <Link
-                className="button button--warning button--lg"
-                href="https://www.buymeacoffee.com/shahmal1yev"
-                target="_blank"
-            >
-                <FontAwesomeIcon icon={faCoffee} style={{ marginRight: '8px' }} />
-                Buy Me A Coffee
-            </Link>
+        <div className="container">
+            <img src="/img/logo.svg" alt={siteConfig.title}/>
+            <Heading as="h1" className="hero__title">
+                {siteConfig.title}
+            </Heading>
+            <p className="hero__subtitle">{siteConfig.tagline}</p>
+            <div className={styles.buttons}>
+                <Link
+                    className="button button--secondary button--lg"
+                    to="/docs/intro"
+                    target="_blank"
+                >
+                    Getting Started
+                </Link>
+                <Link
+                    className="button button--lg"
+                    href="https://github.com/sponsors/shahmal1yev"
+                    target="_blank"
+                >
+                    <FontAwesomeIcon icon={faGithub} style={{marginRight: '8px'}}/>
+                    Sponsor on GitHub
+                </Link>
+                <Link
+                    className="button button--warning button--lg"
+                    href="https://www.buymeacoffee.com/shahmal1yev"
+                    target="_blank"
+                >
+                    <FontAwesomeIcon icon={faCoffee} style={{marginRight: '8px'}}/>
+                    Buy Me A Coffee
+                </Link>
+            </div>
         </div>
-      </div>
     </header>
   );
 }
