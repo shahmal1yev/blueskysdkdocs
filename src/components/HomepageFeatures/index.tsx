@@ -3,52 +3,50 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
+    title: string;
+    imgSrc: string;
+    description: JSX.Element;
 };
 
+
 const FeatureList: FeatureItem[] = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+    {
+        title: 'Protocol-Based Interoperability',
+        imgSrc: '/img/interoperability.png',
+        description: (
+            <>
+                Built entirely on ATProtocol, the SDK enables seamless interaction with any system implemented at the protocol level.
+            </>
+        ),
+    },
+    {
+        title: 'Future-Ready Design',
+        imgSrc: '/img/startup.png',
+        description: (
+            <>
+                Designed to support upcoming systems built on ATProtocol, ensuring long-term compatibility and scalability.
+            </>
+        ),
+    },
+    {
+        title: 'Comprehensive Documentation',
+        imgSrc: '/img/documents.png',
+        description: (
+            <>
+                Detailed guides, examples, and API references help developers integrate the SDK quickly and effectively.
+            </>
+        ),
+    },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, imgSrc, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <div className="text--center">
+            <img src={imgSrc} alt={title} className={styles.featureImage} style={{ padding: '30px' }} />
+        </div>
+        <div className="text--center padding-horiz--md">
+            <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
