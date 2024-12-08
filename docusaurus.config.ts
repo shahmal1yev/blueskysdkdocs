@@ -104,6 +104,15 @@ const config: Config = {
             { label: 'Twitter', href: 'https://x.com/shahmal1yev' },
           ],
         },
+        {
+          type: 'dropdown',
+          label: 'Support',
+          position: 'right',
+          items: [
+            { label: 'GitHub Sponsors', href: 'https://github.com/sponsors/shahmal1yev' },
+            { label: 'Buy me a coffee', href: 'https://buymeacoffee.com/shahmal1yev' },
+          ],
+        },
       ],
     },
     footer: {
@@ -128,6 +137,13 @@ const config: Config = {
           items: [
             { label: 'LinkedIn', href: 'https://linkedin.com/in/shahmal1yev' },
             { label: 'Twitter', href: 'https://x.com/shahmal1yev' },
+          ],
+        },
+        {
+          title: 'Support',
+          items: [
+            { label: 'GitHub Sponsors', href: 'https://github.com/sponsors/shahmal1yev' },
+            { label: 'Buy me a coffee', href: 'https://buymeacoffee.com/shahmal1yev' },
           ],
         },
         {
