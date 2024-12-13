@@ -54,8 +54,9 @@ They say a picture is worth a thousand words, and Bluesky posts are no exception
 image to make your post more engaging:
 
 ```php title="Upload an Image"
-$uploadedBlob = $client->com()->atproto()->repo()->createRecord()->forge()
-    ->blob('docs-released.png') // Your image file here
+$uploadedBlob = $client->com()->atproto()->repo()->uploadBlob()->forge()
+    ->token($client->authenticated()->accessJwt())
+    ->blob('docs-released.png')
     ->send()
     ->blob();
 ```
